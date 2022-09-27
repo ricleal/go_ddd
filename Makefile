@@ -22,7 +22,7 @@ clean:
 	rm ${BINARY_NAME}-windows
 
 test:
-	go test ./...
+	grc go test ./...
 
 test_coverage:
 	go test ./... -coverprofile=coverage.out
