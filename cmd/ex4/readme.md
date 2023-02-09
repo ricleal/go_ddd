@@ -1,5 +1,19 @@
-DDD
+# Domain Driven Design (DDD) in Go
 
 ```
-go run cmd/ex3/main.go
+internal
+└── app
+    ├── domain
+    ├── presentation
+    │   └── table
+    └── service
+        └── repository
+            ├── memory
+            └── sqlite
 ```
+
+Run as:
+```sh
+go run cmd/ex4/main.go
+```
+

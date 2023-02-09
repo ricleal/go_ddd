@@ -34,14 +34,14 @@ func (a *App) Run() error {
 		}
 	}
 
-	p := domain.NewPerson("Invalid Person 123", 111)
+	p := domain.NewPerson("Invalid Person on purpose 123", 111)
 	err := p.Validate()
 	if err != nil {
 		log.Printf("p.Validate() error: %v", err)
 	} else {
 		err = a.service.Create(*p)
 		if err != nil {
-			log.Printf("a.service.CreatePerson() error: %v", err)
+			log.Printf("Error creating a person: %v", err)
 		}
 	}
 
