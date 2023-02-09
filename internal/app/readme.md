@@ -1,1 +1,12 @@
-app services
+
+```
+internal
+└── app
+    ├── domain
+    ├── presentation
+    │   └── table
+    └── service
+        └── repository
+            ├── memory
+            └── sqlite
+```
